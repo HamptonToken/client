@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamptontoken | Log in</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="index2.html" class="h1"><b>Hampton</b>Token</a>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Please login with your Hampton address.</p>
+
+      <form action="index3.html" method="post">
+        <div class="input-group mb-3">
+          <input type="address-book" class="form-control" placeholder="0x8fa9………………">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-address-book"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <p class="mb-0">
+                <a href="register.html" class="text-center">Join Hamptontoken</a>
+              </p>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-default">
+              Sign In
+            </button>
+            <!-- <button type="submit" class="btn btn-primary btn-block">Sign In</button> -->
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+<div class="modal fade" id="modal-default">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Signing</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Please sign with your private key.</p>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="private key">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
+        <button type="button" class="btn btn-primary toastrDefaultSuccess">Sign In</button>
+
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+<!-- SweetAlert2 -->
+<script src="plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="plugins/toastr/toastr.min.js"></script>
+
+<script>
+  $(function() {
+    var Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000
+    });
+
+    $('.toastrDefaultSuccess').click(function() {
+      toastr.success('Login successfully.<br /><br /> <button type="submit" class="btn btn-info" onclick="window.location.href=\'mainpage.html\'">OK</button>')
+    });
+})
+</script>
+</body>
+</html>
