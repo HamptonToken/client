@@ -1,1 +1,1 @@
-# client
+# Hampton Metaverse client side
