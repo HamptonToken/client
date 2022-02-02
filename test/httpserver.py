@@ -28,6 +28,10 @@ class AuthHandler(SimpleHTTPRequestHandler):
             self.wfile.write('no auth header received')
             pass
         elif self.headers.getheader('Authorization') == 'Basic '+key:
+            #
+            # The "Basic" HTTP authentication scheme is defined in RFC 7617, 
+            # which transmits credentials as user ID/password pairs, encoded using base64.
+            #
             SimpleHTTPRequestHandler.do_GET(self)
             pass
         else:
