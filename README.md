@@ -1,3 +1,3 @@
 # Hampton Metaverse client side
 
-Web Framework and UI
+Web Framework and UI with basic functions
