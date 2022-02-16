@@ -4,6 +4,7 @@ import os
 import sys
 import subprocess
 
+# jar or tar or zip file
 #-----------------------------------------------------------------------------
 def main():
     fileNames = sys.argv[1:]
