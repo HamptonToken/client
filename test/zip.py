@@ -7,6 +7,7 @@ import subprocess
 # jar or tar or zip file
 #-----------------------------------------------------------------------------
 def main():
+    # need to check arguments
     fileNames = sys.argv[1:]
 
     errorMessages = []
