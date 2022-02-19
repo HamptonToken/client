@@ -12,11 +12,11 @@ def main():
 
     errorMessages = []
     for fileName in fileNames:
-        if not isArchive(fileName):
+        if not isArchive(fileName): # only zip or jar right now.
             errorMessages.append("file is not an archive:        %s" % fileName)
         
-        contentsDir = getExpandedDirName(fileName)
-        if os.path.exists(contentsDir):
+        contentsDir = getExpandedDirName(fileName) # use filename as dir name
+        if os.path.exists(contentsDir): # only allow once at this moment
             errorMessages.append("directory needs to be removed: %s" % contentsDir)
             
     if len(errorMessages) > 0:
