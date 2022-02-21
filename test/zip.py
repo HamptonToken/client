@@ -16,7 +16,7 @@ def main():
             errorMessages.append("file is not an archive:        %s" % fileName)
         
         contentsDir = getExpandedDirName(fileName) # use filename as dir name
-        if os.path.exists(contentsDir): # only allow de-compress once at this moment
+        if os.path.exists(contentsDir): # only allow de-compress once at this moment, or remove dir
             errorMessages.append("directory needs to be removed: %s" % contentsDir)
             
     if len(errorMessages) > 0:
