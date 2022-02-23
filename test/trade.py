@@ -15,7 +15,7 @@ nonce = str(int(time.time())) #nonce is a number that is always higher than the 
 
 
 data = {
-  'ticker': 'HMETA', #for example for obtaining trading balance for BTC currency
+  'ticker': 'HMETA', #for example for obtaining trading balance for HMETA currency
   'request': request,
   'nonce': nonce
 }
