@@ -6,7 +6,7 @@ import hmac
 import hashlib
 
 
-api_key = '' #put here your public key
+api_key = '*' #put here your public key
 secret_key = '' #put here your secret key
 request = '/api/v4/trade-account/balance' #put here request path. For obtaining trading balance use: /api/v4/trade-account/balance
 baseUrl = 'https://whitebit.com' #domain without last slash. Do not use https://whitebit.com/
