@@ -5,8 +5,8 @@ import json
 import os
 import subprocess
 
-#nft
+# NFT
 os.system('cls' if os.name=='nt' else 'clear')
 
-#ERC-721
+# ERC-721
 
