@@ -8,5 +8,5 @@ import subprocess
 #nft
 os.system('cls' if os.name=='nt' else 'clear')
 
-#erc
+#ERC-721
 
