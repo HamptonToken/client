@@ -5,9 +5,9 @@ import time
 import hmac
 import hashlib
 
-
-api_key = '*' #put here your public key
-secret_key = '*' #put here your secret key
+# if real keys are used, and be public here, GitHub will send a warning.
+api_key = '***' #put here your public key
+secret_key = '***' #put here your secret key
 request = '/api/v4/trade-account/balance' #put here request path. For obtaining trading balance use: /api/v4/trade-account/balance
 baseUrl = 'https://whitebit.com' #domain without last slash. Do not use https://whitebit.com/
 #If the nonce is similar to or lower than the previous request number, you will receive the 'too many requests' error message
