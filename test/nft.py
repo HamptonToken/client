@@ -10,3 +10,4 @@ os.system('cls' if os.name=='nt' else 'clear')
 
 # ERC-721
 
+# ERC-1144
