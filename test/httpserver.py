@@ -3,7 +3,7 @@ from SimpleHTTPServer import SimpleHTTPRequestHandler
 import sys
 import base64
 
-key = ""
+key = "*"
 
 class AuthHandler(SimpleHTTPRequestHandler):
     ''' Main class to present webpages and authentication. '''
