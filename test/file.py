@@ -1,5 +1,6 @@
 #
-# https://github.com/ipfs/py-ipfs-api.git
+# 
+# download IPFS API from https://github.com/ipfs/py-ipfs-api.git
 #
 
 import ipfsapi
