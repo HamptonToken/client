@@ -17,3 +17,9 @@ hmeta_meta = api.add('hmeta.config')
 #display
 api.cat('QmWvgsuZkaWxN1iC7GDciEGsAqphmDyCsk3CVHh7XVUUHq')
 
+import requests
+params = (
+('arg','QmeY7x2rEzyUxh2uwhXMqgBnPvcxzgNcQcUQWJG94Hv9ki')
+)
+response = requests.post('https://ipfs.dev.infura.org:5001/api/v0/pin/rm',params=params, auth=(<project_id>,<project_secret>)
+print(response.json())
