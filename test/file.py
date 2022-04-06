@@ -8,7 +8,7 @@
 
 import ipfsapi
 
-api = ipfsapi.connect('127.0.0.1', 5001)
+api = ipfsapi.connect('127.0.0.1', 15001)
 
 hmeta_meta = api.add('hmeta.config')
 
