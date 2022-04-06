@@ -7,6 +7,7 @@
 #
 
 import ipfsapi
+import requests
 
 api = ipfsapi.connect('127.0.0.1', 15001)
 
@@ -17,7 +18,8 @@ hmeta_meta = api.add('hmeta.config')
 #display
 api.cat('QmWvgsuZkaWxN1iC7GDciEGsAqphmDyCsk3CVHh7XVUUHq')
 
-import requests
+
+# remote with infura
 params = (
 ('arg','QmeY7x2rEzyUxh2uwhXMqgBnPvcxzgNcQcUQWJG94Hv9ki')
 )
