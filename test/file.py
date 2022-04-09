@@ -12,6 +12,7 @@ import requests
 api = ipfsapi.connect('127.0.0.1', 15001)
 
 hmeta_meta = api.add('hmeta.config')
+hmeta_meta = api.add('hnft.config')
 
 # {'Name': 'hmeta.config', 'Hash': 'QmWvgsuZkaWxN1iC7GDciEGsAqphmDyCsk3CVHh7XVUUHq', 'Size': '28'}
 
