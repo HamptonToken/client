@@ -8,6 +8,7 @@ bin-release/
 .settings/
 
 # Executables
+*.tar.gz
 *.swf
 *.air
 *.ipa
