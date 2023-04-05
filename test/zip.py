@@ -6,6 +6,7 @@ import subprocess
 
 # jar or tar or zip file
 # zip and unzip
+# zlib
 #-----------------------------------------------------------------------------
 def main():
     # need to check arguments
