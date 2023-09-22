@@ -10,7 +10,7 @@ bin-release/
 
 # Executables
 *.tar.gz
-*.swf
+*.swf.
 *.air
 *.ipa
 *.apk
