@@ -27,7 +27,6 @@
 
     window.db = db;
 
-
     db.type = [
         { Name: "", Id: 0 },
         { Name: "Avatar", Id: 1 },
