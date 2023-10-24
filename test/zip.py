@@ -4,7 +4,7 @@ import os
 import sys
 import subprocess
 
-# jar or tar or zip file
+# jar or tar or zip file?
 # zip and unzip
 # zlib
 #-----------------------------------------------------------------------------
