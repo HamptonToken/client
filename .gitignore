@@ -8,7 +8,7 @@ bin-release/
 .settings/
 *.test
 
-# Executables
+# Executables:
 *.tar.gz
 *.swf.
 *.air
